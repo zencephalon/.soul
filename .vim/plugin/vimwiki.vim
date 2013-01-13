@@ -334,7 +334,7 @@ endif "}}}
 
 " DEFAULT wiki {{{
 let s:vimwiki_defaults = {}
-let s:vimwiki_defaults.path = '~/vimwiki/'
+let s:vimwiki_defaults.path = '~/.viki/'
 let s:vimwiki_defaults.path_html = ''   " '' is replaced by derived path.'_html/'
 let s:vimwiki_defaults.css_name = 'style.css'
 let s:vimwiki_defaults.index = 'index'
