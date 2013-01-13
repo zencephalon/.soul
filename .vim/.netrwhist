@@ -1,0 +1,4 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/Users/zencephalon/dev/api-php/classes'
+let g:netrw_dirhist_2='/Users/zencephalon/dev/ops/puppet-files/jmailer/jmailer_nagios/check_mk_agent'
