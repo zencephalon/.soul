@@ -1,3 +1,5 @@
 [user]
 	email = zenceph@gmail.com
 	name = Matthew Bunday
+[push]
+	default = simple
