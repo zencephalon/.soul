@@ -1,5 +1,6 @@
 alias soul="git --work-tree=$HOME --git-dir=$HOME/.soul.git"
 set fish_greeting
+set BROWSER chromium-browser
 alias e="gvim"
 alias h="cd $HOME"
 
