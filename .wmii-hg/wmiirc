@@ -10,6 +10,7 @@ UP=k
 DOWN=j
 LEFT=h
 RIGHT=l
+SHELL=/usr/bin/fish
 
 # Bars
 noticetimeout=5
@@ -23,7 +24,8 @@ export WMII_BACKGROUND='#333333'
 export WMII_FONT='-*-fixed-medium-r-*-*-13-*-*-*-*-*-*-*'
 
 set -- $(echo $WMII_NORMCOLORS $WMII_FOCUSCOLORS)
-export WMII_TERM="sakura -e fish"
+# export WMII_TERM="sakura -e fish"
+export WMII_TERM="xterm"
 
 # Ask about MODKEY on first run
     if ! test -d "${WMII_CONFPATH%%:*}"; then
