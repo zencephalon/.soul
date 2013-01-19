@@ -21,7 +21,7 @@ export WMII_FOCUSCOLORS='#dc322f #002b36 #073642'
 export WMII_NORMCOLORS='#268bd2 #073642 #002b36'
 
 export WMII_BACKGROUND='#333333'
-export WMII_FONT='-*-fixed-medium-r-*-*-13-*-*-*-*-*-*-*'
+export WMII_FONT='-*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*'
 
 set -- $(echo $WMII_NORMCOLORS $WMII_FOCUSCOLORS)
 # export WMII_TERM="sakura -e fish"

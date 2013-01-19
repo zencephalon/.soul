@@ -1,4 +1,4 @@
-set guifont=Envy\ Code\ R\ 9
+set guifont=Envy\ Code\ R\ 12
 " set spell spelllang=en_us 
 set guioptions-=T
 set guioptions+=lrb
