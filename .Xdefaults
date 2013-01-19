@@ -2,7 +2,7 @@
 !
 ! http://ethanschoonover.com/solarized
 
-xterm*faceName: xft:envy code r:medium:pixelsize=16
+xterm*faceName: xft:envy code r:medium:pixelsize=12
 
 ! Common
 
