@@ -17,8 +17,9 @@ noticetimeout=5
 noticebar=/rbar/!notice
 
 # Colors tuples: "<text> <background> <border>"
-export WMII_FOCUSCOLORS='#dc322f #002b36 #073642'
+export WMII_FOCUSCOLORS='#dc322f #000000 #002b36'
 export WMII_NORMCOLORS='#268bd2 #073642 #002b36'
+export WMII_LASTCOLORS='#dc322f #002b36 #002b36'
 
 export WMII_BACKGROUND='#333333'
 export WMII_FONT='-*-fixed-medium-r-*-*-13-*-*-*-*-*-*-*'
@@ -26,20 +27,6 @@ export WMII_FONT='-*-fixed-medium-r-*-*-13-*-*-*-*-*-*-*'
 set -- $(echo $WMII_NORMCOLORS $WMII_FOCUSCOLORS)
 # export WMII_TERM="sakura -e fish"
 export WMII_TERM="xterm"
-
-# Ask about MODKEY on first run
-    if ! test -d "${WMII_CONFPATH%%:*}"; then
-        mkdir "${WMII_CONFPATH%%:*}"
-        res=$(wihack -type DIALOG xmessage -nearmouse -buttons Windows,Alt -print -fn $WMII_FONT \
-              "Welcome to wmii,$wi_newline$wi_newline" \
-              "Most of wmii's default key bindings make use of the$wi_newline" \
-              "Windows key, or equivalent. For keyboards lacking such$wi_newline" \
-              "a key, many users change this to the Alt key.$wi_newline$wi_newline" \
-              "Which would you prefer?")
-        [ "$res" = "Alt" ] && MODKEY=Mod1
-        echo "MODKEY=$MODKEY" >"${WMII_CONFPATH%%:*}/wmiirc_local"
-        chmod +x "${WMII_CONFPATH%%:*}/wmiirc_local"
-    fi
 
 # Menu history
 hist="${WMII_CONFPATH%%:*}/history"
@@ -87,8 +74,12 @@ Event DestroyTag
 	wmiir remove "/lbar/$@"
 Event FocusTag
 	wmiir xwrite "/lbar/$@" colors "$WMII_FOCUSCOLORS"
+	wmiir xwrite "/lbar/$LastWindow" colors "$WMII_LASTCOLORS"
+        CurrentWindow="$@" 
 Event UnfocusTag
-	wmiir xwrite "/lbar/$@" colors "$WMII_NORMCOLORS"
+	#wmiir xwrite "/lbar/$@" colors "$WMII_NORMCOLORS"
+	wmiir xwrite "/lbar/$LastWindow" colors "$WMII_NORMCOLORS"
+        LastWindow="$@"
 Event UrgentTag
 	shift
 	wmiir xwrite "/lbar/$@" label "*$@"
