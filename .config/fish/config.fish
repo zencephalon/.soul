@@ -3,6 +3,7 @@ set fish_greeting
 set BROWSER chromium-browser
 alias e="gvim"
 alias h="cd $HOME"
+alias vw="gvim $HOME/.viki/index.wiki"
 
 set name mbunday
 alias qa "ssh ec2-184-72-234-254.compute-1.amazonaws.com"
