@@ -226,11 +226,16 @@ Key $MODKEY-n	    # Move to the next tag
 	wmiir xwrite /ctl view $(wi_tags | wi_nexttag)
 Key $MODKEY-b	    # Move to the previous tag
 	wmiir xwrite /ctl view $(wi_tags | sort -r | wi_nexttag)
+Key $MODKEY-Tab
+        wmiir xwrite /ctl view "$LastWindow"
+Key $MODKEY-Shift-Tab
+        wmiir xwrite /client/sel/tags "$LastWindow"
 !
 	for i in 0 1 2 3 4 5 6 7 8 9; do
 		wi_events <<!
 Key $MODKEY-$i		 # Move to the numbered view
 	wmiir xwrite /ctl view "$i"
+        #wmiir xwrite /ctrl view $(wmiir ls /tag/ | sed "$i!d;q" | sed 's/.$//')
 Key $MODKEY-Shift-$i     # Retag selected client with the numbered tag
 	wmiir xwrite /client/sel/ctl tags "$i"
 !
