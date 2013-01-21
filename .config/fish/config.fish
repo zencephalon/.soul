@@ -3,6 +3,8 @@ set fish_greeting
 set BROWSER chromium-browser
 alias e="gvim"
 alias h="cd $HOME"
+alias c="cd"
+alias l="ls -ltrh --color=auto"
 alias vw="gvim $HOME/.viki/index.wiki"
 
 set name mbunday
