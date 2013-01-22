@@ -230,6 +230,10 @@ Key $MODKEY-Tab
         wmiir xwrite /ctl view "$LastWindow"
 Key $MODKEY-Shift-Tab
         wmiir xwrite /client/sel/tags "$LastWindow"
+Key $MODKEY-z
+        wmiir xwrite /ctl view z
+Key $MODKEY-Shift-z
+        wmiir xwrite /client/sel/tags z
 !
 	for i in 0 1 2 3 4 5 6 7 8 9; do
 		wi_events <<!
