@@ -1,4 +1,9 @@
 alias soul="git --work-tree=$HOME --git-dir=$HOME/.soul.git"
+
+alias viki="git --work-tree=$HOME/.viki/personal/ --git-dir=$HOME/.viki/personal/.git"
+alias siki="git --work-tree=$HOME/.viki/sailthru/ --git-dir=$HOME/.viki/sailthru/.git"
+alias piki="git --work-tree=$HOME/.viki/public/ --git-dir=$HOME/.viki/public/.git"
+
 set fish_greeting
 set BROWSER chromium-browser
 alias e="gvim"
