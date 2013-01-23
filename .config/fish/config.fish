@@ -3,9 +3,9 @@ alias soul="git --work-tree=$HOME --git-dir=$HOME/.soul.git"
 alias viki="git --work-tree=$HOME/.viki/personal/ --git-dir=$HOME/.viki/personal/.git"
 alias siki="git --work-tree=$HOME/.viki/sailthru/ --git-dir=$HOME/.viki/sailthru/.git"
 alias piki="git --work-tree=$HOME/.viki/public/ --git-dir=$HOME/.viki/public/.git"
-alias vikiz="viki commit -a -m 'viki' ; viki push origin master"
-alias sikiz="siki commit -a -m 'siki' ; siki push origin master"
-alias pikiz="piki commit -a -m 'piki' ; piki push origin master"
+alias vikiz="viki add . ; viki commit -a -m 'viki' ; viki push origin master"
+alias sikiz="siki add . ; siki commit -a -m 'siki' ; siki push origin master"
+alias pikiz="siki add . ; piki commit -a -m 'piki' ; piki push origin master"
 alias wiki="vikiz ; sikiz ; pikiz"
 
 set fish_greeting
