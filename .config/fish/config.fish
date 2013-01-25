@@ -7,6 +7,7 @@ alias vikiz="viki add . ; viki commit -a -m 'viki' ; viki push origin master"
 alias sikiz="siki add . ; siki commit -a -m 'siki' ; siki push origin master"
 alias pikiz="siki add . ; piki commit -a -m 'piki' ; piki push origin master"
 alias wiki="vikiz ; sikiz ; pikiz"
+alias wikid="viki pull; siki pull; piki pull"
 
 set fish_greeting
 set BROWSER chromium-browser
