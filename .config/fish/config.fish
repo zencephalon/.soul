@@ -3,11 +3,11 @@ alias soul="git --work-tree=$HOME --git-dir=$HOME/.soul.git"
 alias viki="git --work-tree=$HOME/.viki/personal/ --git-dir=$HOME/.viki/personal/.git"
 alias siki="git --work-tree=$HOME/.viki/sailthru/ --git-dir=$HOME/.viki/sailthru/.git"
 alias piki="git --work-tree=$HOME/.viki/public/ --git-dir=$HOME/.viki/public/.git"
-alias vikiz="viki add . ; viki commit -a -m 'viki' ; viki push origin master"
-alias sikiz="siki add . ; siki commit -a -m 'siki' ; siki push origin master"
-alias pikiz="siki add . ; piki commit -a -m 'piki' ; piki push origin master"
+alias vikiz="viki add $HOME/.viki/personal/* ; viki commit -a -m 'viki' ; viki push origin master"
+alias sikiz="siki add $HOME/.viki/sailthru/* ; siki commit -a -m 'siki' ; siki push origin master"
+alias pikiz="piki add $HOME/.viki/public/* ; piki commit -a -m 'piki' ; piki push origin master"
 alias wiki="vikiz ; sikiz ; pikiz"
-alias wikid="viki pull; siki pull; piki pull"
+alias wikid="viki pull origin master; siki pull origin master; piki pull origin master"
 
 set fish_greeting
 set BROWSER chromium-browser
