@@ -6,8 +6,8 @@ alias piki="git --work-tree=$HOME/.viki/public/ --git-dir=$HOME/.viki/public/.gi
 alias vikiz="viki add $HOME/.viki/personal/* ; viki commit -a -m 'viki' ; viki push origin master"
 alias sikiz="siki add $HOME/.viki/sailthru/* ; siki commit -a -m 'siki' ; siki push origin master"
 alias pikiz="piki add $HOME/.viki/public/* ; piki commit -a -m 'piki' ; piki push origin master"
-alias wiki="vikiz ; sikiz ; pikiz"
-alias wikid="viki pull origin master; siki pull origin master; piki pull origin master"
+alias wu="vikiz ; sikiz ; pikiz"
+alias wd="viki pull origin master; siki pull origin master; piki pull origin master"
 
 set fish_greeting
 set BROWSER chromium-browser
