@@ -68,3 +68,4 @@ inoremap <F5> <ESC>:call ToggleBackground()<CR>a
 vnoremap <F5> <ESC>:call ToggleBackground()<CR>
 
 let g:vimwiki_list = [{'path':'~/.viki/personal/'}, {'path':'~/.viki/sailthru/'}, {'path':'~/.viki/public/'}]
+"autocmd BufEnter * if &filetype == "" | setlocal ft=vimwiki | setlocal syntax=vimwiki | endif
