@@ -11,6 +11,7 @@ alias wd="viki pull origin master; siki pull origin master; piki pull origin mas
 
 set fish_greeting
 set BROWSER chromium-browser
+set GOPATH $HOME/h/go
 alias e="gvim"
 alias h="cd $HOME"
 alias c="cd"
