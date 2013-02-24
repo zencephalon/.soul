@@ -58,3 +58,10 @@ function fish_prompt
         printf '%s%s%s> ' (set_color $fish_color_cwd) (prompt_pwd) (set_color normal)
     end 
 end
+
+function publish
+    vim .viki/public/index.wiki -S generate_html.vim
+    sudo rm /usr/share/nginx/html/public_wiki/*
+    sudo cp .viki/public_html/* /usr/share/nginx/html/public_wiki/
+    sudo nginx -s reload
+end
