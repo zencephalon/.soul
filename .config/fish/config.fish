@@ -28,16 +28,17 @@ alias inny="ssh mbunday@63.251.23.254"
 
 alias linode="ssh zen@50.116.9.112"
 
-# sailthru devtools workflow aliases
-alias rfc="php ~/s/devtools/workflow/rfc.php $1"
-alias rfc-complete="php ~/s/devtools/workflow/rfc.php --complete $1"
-alias mergereq="php ~/s/devtools/workflow/mergereq.php $1"
-alias release-create="php ~/s/devtools/workflow/release-create.php $1"
-alias release-qa="php ~/s/devtools/workflow/release-qa.php $1"
-alias release-qa-signoff="php ~/s/devtools/workflow/release-qa-signoff.php $1"
-alias release-merge="php ~/s/devtools/workflow/release-merge.php $1"
-alias release-deploy="php ~/s/devtools/workflow/release-deploy.php $1"
+alias rfc="php ~/s/devtools/workflow/rfc.php"
+alias rfc_complete="php ~/s/devtools/workflow/rfc.php --complete"
 alias pullreq="php ~/s/devtools/workflow/pullreq.php"
+alias git_branch="php ~/s/devtools/workflow/git-branch.php"
+
+alias s_create="php ~/s/devtools/workflow/create.php"
+alias s_complete="php ~/s/devtools/workflow/complete.php"
+alias s_release="php ~/s/devtools/workflow/release.php"
+
+alias release_create="php ~/s/devtools/workflow/release-create.php"
+alias release_deploy="php ~/s/devtools/workflow/release-deploy.php"
 
 set fish_git_dirty_color red
 function parse_git_dirty 
