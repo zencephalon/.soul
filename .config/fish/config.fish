@@ -26,6 +26,8 @@ alias sgate="ssh sailthru@ec2-184-72-234-254.compute-1.amazonaws.com"
 alias vpc="ssh mbunday@107.21.27.230"
 alias inny="ssh mbunday@63.251.23.254"
 
+alias linode="ssh zen@50.116.9.112"
+
 # sailthru devtools workflow aliases
 alias rfc="php ~/s/devtools/workflow/rfc.php $1"
 alias rfc-complete="php ~/s/devtools/workflow/rfc.php --complete $1"
