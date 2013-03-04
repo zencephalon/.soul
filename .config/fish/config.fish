@@ -57,9 +57,9 @@ end
 
 function fish_prompt
     if test -n (parse_git_branch)
-        printf '%s%s%s %s> ' (set_color $fish_color_cwd) (prompt_pwd) (set_color normal) (parse_git_branch)            
+        printf '%s %s%s%s %s> ' (hostname) (set_color $fish_color_cwd) (prompt_pwd) (set_color normal) (parse_git_branch)            
     else
-        printf '%s%s%s> ' (set_color $fish_color_cwd) (prompt_pwd) (set_color normal)
+        printf '%s %s%s%s> ' (hostname) (set_color $fish_color_cwd) (prompt_pwd) (set_color normal)
     end 
 end
 
