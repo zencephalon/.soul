@@ -64,7 +64,7 @@ function fish_prompt
 end
 
 function publish
-    vim .viki/public/index.wiki -S generate_html.vim
+    vim .viki/public/index.wiki -S ~/generate_html.vim
     sudo rm /usr/share/nginx/html/public_wiki/*
     sudo cp .viki/public_html/* /usr/share/nginx/html/public_wiki/
     sudo nginx -s reload
