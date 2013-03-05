@@ -64,8 +64,9 @@ function fish_prompt
 end
 
 function publish
+    rm ~/.viki/public_html/*
     vim .viki/public/index.wiki -S ~/generate_html.vim
+    cp ~/.viki/web/style.css ~/.viki/public_html/
     sudo rm /usr/share/nginx/html/public_wiki/*
-    sudo cp .viki/public_html/* /usr/share/nginx/html/public_wiki/
-    sudo nginx -s reload
+    sudo cp ~/.viki/public_html/* /usr/share/nginx/html/public_wiki/
 end
