@@ -1,0 +1,5 @@
+[
+        { "keys": ["ctrl+r"], "command": "goto_definition" },
+        { "keys": ["ctrl+shift+r"], "command": "goto_symbol_in_project" },
+
+]

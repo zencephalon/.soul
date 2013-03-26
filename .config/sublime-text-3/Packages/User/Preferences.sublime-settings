@@ -1,0 +1,15 @@
+{
+	"always_show_minimap_viewport": true,
+	"caret_style": "wide",
+	"color_scheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
+	"font_face": "Envy Code R",
+	"font_size": 11,
+	"word_wrap": true,
+	"ignored_packages":
+	[
+	],
+	"margin": 1,
+	"translate_tabs_to_spaces": true,
+	"draw_white_space" : "all",
+	"auto_complete_commit_on_tab": true
+}
