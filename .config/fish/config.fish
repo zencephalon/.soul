@@ -31,6 +31,7 @@ alias linode="ssh zen@50.116.9.112"
 
 alias rfc="php ~/dev/devtools/workflow/rfc.php"
 alias rfc_complete="php ~/dev/devtools/workflow/rfc.php --complete"
+alias rfc-review="php ~/dev/devtools/workflow/rfc.php --review $1"
 alias pullreq="php ~/dev/devtools/workflow/pullreq.php"
 alias git_branch="php ~/dev/devtools/workflow/git-branch.php"
 
@@ -40,6 +41,8 @@ alias s_release="php ~/dev/devtools/workflow/release.php"
 
 alias release_create="php ~/dev/devtools/workflow/release-create.php"
 alias release_deploy="php ~/dev/devtools/workflow/release-deploy.php"
+
+alias q01-q="ssh -L 8161:ec2ev-qa1:8161 mbunday@107.21.27.230"
 
 set fish_git_dirty_color red
 function parse_git_dirty 
