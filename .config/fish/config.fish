@@ -26,7 +26,7 @@ alias qa2 "ssh 107.21.27.230"
 alias sgate="ssh sailthru@ec2-184-72-234-254.compute-1.amazonaws.com"
 alias vpc="ssh mbunday@107.21.27.230"
 alias inny="ssh mbunday@63.251.23.254"
-
+alias qa1-q="ssh -L 8166:ec2ev-qa1:8161 mbunday@107.21.27.230"
 alias linode="ssh zen@50.116.9.112"
 
 alias rfc="php ~/dev/devtools/workflow/rfc.php"
@@ -41,6 +41,8 @@ alias s_release="php ~/dev/devtools/workflow/release.php"
 
 alias release_create="php ~/dev/devtools/workflow/release-create.php"
 alias release_deploy="php ~/dev/devtools/workflow/release-deploy.php"
+
+alias sailbot="ssh mbunday@inny-jump2.sailthru.com 'sudo -u sailthru php /home/sailthru/sailbot/deploy.php'"
 
 alias q01-q="ssh -L 8161:ec2ev-qa1:8161 mbunday@107.21.27.230"
 
