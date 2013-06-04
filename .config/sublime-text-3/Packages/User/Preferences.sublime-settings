@@ -5,6 +5,7 @@
 	"font_face": "Envy Code R",
 	"font_size": 11,
 	"word_wrap": true,
+	"vintage_start_in_command_mode": true,
 	"ignored_packages":
 	[
 	],
