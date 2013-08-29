@@ -43,3 +43,5 @@
         sa = stash apply
         ss = stash save
         logtree="log --graph --oneline --decorate --all"
+[diff]
+	algorithm = patience
