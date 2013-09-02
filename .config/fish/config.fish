@@ -14,11 +14,19 @@ set BROWSER chromium-browser
 set GOPATH $HOME/h/go
 set PATH /home/zen/.gem/ruby/1.9.1/bin /home/zen/.gem/ruby/2.0.0/bin /usr/bin/core_perl /bin /usr/bin /sbin /usr/sbin /usr/local/heroku/bin $PATH
 set GEM_HOME /home/zen/.gem/ruby/2.0.0
+set EDITOR vim
 alias e="gvim"
 alias h="cd $HOME"
 alias c="cd"
 alias l="ls -ltrh --color=auto"
 alias vw="gvim $HOME/.viki/index.wiki"
+
+function ws
+    set j $argv
+    grep $j .viki/ -R --exclude "*.swp" --exclude-dir ".git" -l -i
+    read n
+    vim (grep $j .viki/ -R --exclude "*.swp" --exclude-dir ".git" -l -i | head -$n | tail -1)
+end
 
 set name mbunday
 alias qa "ssh ec2-184-72-234-254.compute-1.amazonaws.com"
