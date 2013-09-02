@@ -12,8 +12,10 @@ set ruler
 set showcmd		
 set incsearch		
 "match ErrorMsg '\%>80v.+'
-
 ":inoremap ` <Esc>
+
+set backupdir=~/.vim/backup/
+set directory=~/.vim/backup/
 
 map Q gq
 
@@ -29,16 +31,10 @@ set hlsearch
 filetype indent on
 filetype plugin on
 
-"if has('gui_running')
-"    set background=light
-"else
-    set background=light
-"endif
-
 let g:solarized_termcolors=16
 colorscheme solarized
+let g:solarized_style="dark"
 "set guicursor+=a:blinkon0
-
 
 set et
 set sw=4
