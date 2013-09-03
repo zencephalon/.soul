@@ -33,7 +33,6 @@ filetype plugin on
 
 let g:solarized_termcolors=16
 colorscheme solarized
-let g:solarized_style="dark"
 "set guicursor+=a:blinkon0
 
 set et
