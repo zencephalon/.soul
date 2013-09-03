@@ -31,8 +31,11 @@ set hlsearch
 filetype indent on
 filetype plugin on
 
+set background=light
+
 let g:solarized_termcolors=16
 colorscheme solarized
+"let g:solarized_style="dark"
 "set guicursor+=a:blinkon0
 
 set et
