@@ -4,6 +4,4 @@ fi
 
 xrdb -merge $HOME/.Xdefaults
 
-until wmii; do
-    true
-done
+exec i3
