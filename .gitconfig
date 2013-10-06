@@ -45,3 +45,5 @@
         logtree="log --graph --oneline --decorate --all"
 [diff]
 	algorithm = patience
+[core]
+	excludesfile = /home/zen/.gitignore_global
