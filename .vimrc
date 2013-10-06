@@ -48,6 +48,7 @@ set t_Co=16
 set backupdir=./.backup,.,/tmp
 set directory=.,./.backup,/tmp
 
+set relativenumber
 set number
 
 set virtualedit=all
