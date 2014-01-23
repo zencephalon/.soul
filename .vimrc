@@ -39,7 +39,7 @@ colorscheme solarized
 "set guicursor+=a:blinkon0
 
 set et
-set sw=2
+set sw=4
 set smarttab
 set lbr
 
