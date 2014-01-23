@@ -46,4 +46,4 @@
 [diff]
 	algorithm = patience
 [core]
-	excludesfile = /home/zen/.gitignore_global
+	excludesfile = /Users/zen/.gitignore_global

@@ -39,7 +39,7 @@ colorscheme solarized
 "set guicursor+=a:blinkon0
 
 set et
-set sw=4
+set sw=2
 set smarttab
 set lbr
 
@@ -73,3 +73,4 @@ vnoremap <F5> <ESC>:call ToggleBackground()<CR>
 let g:vimwiki_list = [{'path':'~/.viki/personal/'}, {'path':'~/.viki/sailthru/'}, {'path':'~/.viki/public/', 'template_path':'~/.viki/web/', 'template_default':'default', 'template_ext':'.html'}]
 "autocmd BufEnter * if &filetype == "" | setlocal ft=vimwiki | setlocal syntax=vimwiki | endif
 set encoding=utf-8
+set runtimepath^=~/.vim/bundle/ctrlp.vim

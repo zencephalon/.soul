@@ -12,8 +12,8 @@ alias wd="viki pull origin master; siki pull origin master; piki pull origin mas
 set fish_greeting
 set BROWSER chromium-browser
 set -xU GOPATH $HOME/h/go
-set PATH /home/zen/.gem/ruby/1.9.1/bin /home/zen/.gem/ruby/2.0.0/bin /usr/bin/core_perl /bin /usr/local/bin /usr/bin /sbin /usr/sbin /usr/local/heroku/bin $PATH
-set -xU GEM_HOME /home/zen/.gem/ruby/2.0.0
+set -xU SAILTHRU_ENV sandbox
+set PATH /home/zen/.gem/ruby/1.9.1/bin /Users/zen/.gem/ruby/2.0.0/bin /usr/bin/core_perl /bin /usr/local/bin /usr/bin /sbin /usr/sbin /usr/local/heroku/bin /Users/zen/pear/bin $PAT
 set -xU JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home
 set EDITOR vim
 alias e="gvim"
