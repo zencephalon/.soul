@@ -33,6 +33,7 @@ set name mbunday
 alias qa "ssh ec2-184-72-234-254.compute-1.amazonaws.com"
 alias qa2 "ssh 107.21.27.230"
 
+alias deploy="ssh zen@50.116.9.112 'cd prj/zencephalon-mt; git pull origin master'"
 alias sgate="ssh sailthru@ec2-184-72-234-254.compute-1.amazonaws.com"
 alias vpc="ssh mbunday@107.21.27.230"
 alias inny="ssh mbunday@63.251.23.254"
