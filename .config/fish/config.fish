@@ -1,10 +1,8 @@
 alias soul="git --work-tree=$HOME --git-dir=$HOME/.soul.git"
 
 alias viki="git --work-tree=$HOME/.viki/personal/ --git-dir=$HOME/.viki/personal/.git"
-alias siki="git --work-tree=$HOME/.viki/sailthru/ --git-dir=$HOME/.viki/sailthru/.git"
 alias piki="git --work-tree=$HOME/.viki/public/ --git-dir=$HOME/.viki/public/.git"
 alias vikiz="viki add $HOME/.viki/personal/* ; viki commit -a -m 'viki' ; viki push origin master"
-alias sikiz="siki add $HOME/.viki/sailthru/* ; siki commit -a -m 'siki' ; siki push origin master"
 alias pikiz="piki add $HOME/.viki/public/* ; piki commit -a -m 'piki' ; piki push origin master"
 alias wu="vikiz ; sikiz ; pikiz"
 alias wd="viki pull origin master; siki pull origin master; piki pull origin master"
@@ -34,10 +32,6 @@ alias qa "ssh ec2-184-72-234-254.compute-1.amazonaws.com"
 alias qa2 "ssh 107.21.27.230"
 
 alias deploy="ssh zen@50.116.9.112 'cd prj/zencephalon-mt; git pull origin master'"
-alias sgate="ssh sailthru@ec2-184-72-234-254.compute-1.amazonaws.com"
-alias vpc="ssh mbunday@107.21.27.230"
-alias inny="ssh mbunday@63.251.23.254"
-alias qa1-q="ssh -L 8166:ec2ev-qa1:8161 mbunday@107.21.27.230"
 alias linode="ssh zen@50.116.9.112"
 
 alias rfc="php ~/dev/devtools/workflow/rfc.php"
@@ -52,8 +46,6 @@ alias s_release="php ~/dev/devtools/workflow/release.php"
 
 alias release_create="php ~/dev/devtools/workflow/release-create.php"
 alias release_deploy="php ~/dev/devtools/workflow/release-deploy.php"
-
-alias sailbot="ssh mbunday@inny-jump2.sailthru.com 'sudo -u sailthru php /home/sailthru/sailbot/deploy.php'"
 
 alias q01-q="ssh -L 8161:ec2ev-qa1:8161 mbunday@107.21.27.230"
 
