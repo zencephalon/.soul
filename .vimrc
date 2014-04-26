@@ -74,3 +74,4 @@ let g:vimwiki_list = [{'path':'~/.viki/personal/'}, {'path':'~/.viki/sailthru/'}
 "autocmd BufEnter * if &filetype == "" | setlocal ft=vimwiki | setlocal syntax=vimwiki | endif
 set encoding=utf-8
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+execute pathogen#infect()
