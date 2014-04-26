@@ -14,7 +14,7 @@ set -xU SAILTHRU_ENV sandbox
 set PATH /home/zen/.gem/ruby/1.9.1/bin /Users/zen/.gem/ruby/2.0.0/bin /usr/bin/core_perl /bin /usr/local/bin /usr/bin /sbin /usr/sbin /usr/local/heroku/bin /Users/zen/pear/bin $PAT
 set -xU JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home
 set EDITOR vim
-alias e="gvim"
+alias e="open -a MacVim"
 alias h="cd $HOME"
 alias c="cd"
 alias l="ls -ltrh --color=auto"
