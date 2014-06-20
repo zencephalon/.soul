@@ -15,6 +15,15 @@ set PATH /home/zen/.gem/ruby/1.9.1/bin /Users/zen/.gem/ruby/2.0.0/bin /usr/bin/c
 set -xU JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home
 set EDITOR vim
 alias e="open -a MacVim"
+
+function e
+  if test -f $argv
+  else
+    touch $argv
+  end
+  open -a MacVim $argv
+end
+
 alias h="cd $HOME"
 alias c="cd"
 alias l="ls -ltrh --color=auto"
