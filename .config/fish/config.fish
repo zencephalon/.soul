@@ -20,7 +20,7 @@ function e
   else
     touch $argv
   end
-  open -a VimR $argv
+  open -a MacVim $argv
 end
 
 alias h="cd $HOME"
