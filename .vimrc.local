@@ -3,4 +3,11 @@ set shiftwidth=2                " Use indents of 4 spaces
 set expandtab                   " Tabs are spaces, not tabs
 set tabstop=2                   " An indentation every four columns
 set softtabstop=2               " Let backspace delete indent
-let NERDTreeIgnore=['\.DS_Store']
+let NERDTreeIgnore=['^\.py[cd]$', '^\~$', '^\.swo$', '^\.swp$', '^\.git$', '^\.hg$', '^\.svn$', '^\.bzr$', '^\.DS_Store$']
+
+let g:ctrlp_prompt_mappings = {
+      \ 'AcceptSelection("e")': ['<c-t>'],
+      \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
+      \ }
+
+let g:nerdtree_tabs_open_on_gui_startup=1
