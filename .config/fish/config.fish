@@ -27,6 +27,7 @@ alias h="cd $HOME"
 alias c="cd"
 alias l="ls -ltrh --color=auto"
 alias vw="gvim $HOME/.viki/index.wiki"
+alias be="bundle exec"
 
 function ws
     set j $argv
@@ -39,7 +40,7 @@ set name mbunday
 alias qa "ssh ec2-184-72-234-254.compute-1.amazonaws.com"
 alias qa2 "ssh 107.21.27.230"
 
-alias deploy="ssh zen@50.116.9.112 'cd prj/zencephalon-mt; git pull origin master'"
+alias deploy="ssh zen@50.116.9.112 'cd prj/zencephalon-mt; git pull origin master; cd ../Self-Mastree; git pull origin master'"
 alias linode="ssh zen@50.116.9.112"
 
 alias rfc="php ~/dev/devtools/workflow/rfc.php"
