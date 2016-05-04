@@ -7,6 +7,8 @@ alias pikiz="piki add $HOME/.viki/public/* ; piki commit -a -m 'piki' ; piki pus
 alias wu="vikiz ; sikiz ; pikiz"
 alias wd="viki pull origin master; siki pull origin master; piki pull origin master"
 
+alias gundo="git reset --soft HEAD~"
+
 set fish_greeting
 set BROWSER chromium-browser
 set -xU GOPATH $HOME/h/go
