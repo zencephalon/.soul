@@ -7,10 +7,15 @@ alias pikiz="piki add $HOME/.viki/public/* ; piki commit -a -m 'piki' ; piki pus
 alias wu="vikiz ; sikiz ; pikiz"
 alias wd="viki pull origin master; siki pull origin master; piki pull origin master"
 
+alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+
 alias gundo="git reset --soft HEAD~"
 
+alias deployAdmin="cd ~/dev/react/guestfriend-admin-react/ ; bash build.sh ; rsync -avz --del build/ ubuntu@10.0.0.118:admin-tool/"
+alias deployEmployee="cd ~/dev/react/guestfriend-employee-mobile-react/ ; bash release.sh ; rsync -avz --del build/ ubuntu@10.0.0.118:guestfriend-employee-mobile-react/build/"
+
 set fish_greeting
-set BROWSER chromium-browser
+set BROWSER open
 set -xU GOPATH $HOME/h/go
 set -xU SAILTHRU_ENV sandbox
 set -xU JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home
