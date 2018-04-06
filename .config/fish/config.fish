@@ -22,7 +22,7 @@ set -xU JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Hom
 set -xU JAVA7_HOME /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home
 set -xU JAVA8_HOME /Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home
 set -xU ANDROID_HOME ~/Library/Android/sdk
-set PATH /home/zen/.gem/ruby/1.9.1/bin /Users/zen/.gem/ruby/2.0.0/bin /usr/bin/core_perl /bin /usr/local/bin /usr/bin /sbin /usr/sbin /usr/local/heroku/bin /Users/zen/pear/bin /Applications/Postgres.app/Contents/Versions/9.3/bin $ANDROID_HOME/tools $ANDROID_HOME/platform-tools $PATH
+set PATH /usr/bin/core_perl /bin /usr/local/bin /usr/bin /sbin /usr/sbin /usr/local/heroku/bin /Users/zen/pear/bin /Applications/Postgres.app/Contents/Versions/9.3/bin $ANDROID_HOME/tools $ANDROID_HOME/platform-tools $PATH
 set EDITOR vim
 
 function e
